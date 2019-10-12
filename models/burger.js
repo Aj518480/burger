@@ -9,7 +9,7 @@ var burger = {
   },
   // The variables cols and vals are arrays.
   create: function(cols, vals, cb) {
-    orm.create("burger", cols, vals, function(res) {
+    orm.create("burgers", cols, vals, function(res) {
       cb(res);
     });
   },
@@ -19,11 +19,11 @@ var burger = {
     });
   },
   delete: function(condition, cb) {
-    orm.delete("burger", condition, function(res) {
+    orm.delete("burgers", condition, function(res) {
       cb(res);
     });
   }
 };
 
-// Export the database functions for the controller (catsController.js).
+// Export the database functions for the controller (burgersController.js).
 module.exports = burger;

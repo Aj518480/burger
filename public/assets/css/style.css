@@ -1,7 +1,10 @@
-body {
-    background-image: url("../images/DeadBurger.PNG");
-    background-color: #cccccc;
-    background-repeat: no-repeat, repeat;
+body, html {
+    height: 100%;
+  
+    background-image: url("../images/lol\ burger.jpg");
+   
     background-position: center;
-    
-}
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+

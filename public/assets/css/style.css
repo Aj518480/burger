@@ -1,10 +1,22 @@
 body, html {
     height: 100%;
-  
-    background-image: url("../images/lol\ burger.jpg");
-    
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("../images/iWantToBInsideU.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    font-family: 'Modak', cursive;
+   
+/* font-family: 'Fascinate Inline', cursive; */
+    
+  }
+  h1{
+    margin-left: 20%;
+    font-size: 80px;
+    color:yellow;
+  }
+  h2{
+    color:yellow;
+    margin-left: 10px;
   }
 

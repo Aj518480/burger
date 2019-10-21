@@ -48,13 +48,14 @@ var orm = {
   },
   
   create: function(table, cols, vals, cb) {
+    console.log("works", cols)
     var queryString = "INSERT INTO " + table;
 
-    queryString += " (";
-    queryString += cols.toString();
-    queryString += ") ";
-    queryString += "VALUES (";
-    queryString += printQuestionMarks(vals.length);
+    queryString += " (burger_name, devoured) ";
+    // queryString += cols;
+    // queryString += ") ";
+    queryString += "VALUES ('"+cols.burger_name+"',"+cols.devoured+"";
+    // queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
     console.log(queryString);
@@ -69,6 +70,8 @@ var orm = {
   },
   // An example of objColVals would be {name: panther, sleepy: true}
   update: function(table, objColVals, condition, cb) {
+    console.log("works", objColVals);
+    
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";
